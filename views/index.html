@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send to you</title>
+  <link rel="icon" href="">
+  <link href="https://fonts.cdnfonts.com/css/cera-round-pro" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <link rel="stylesheet" href="/public/css/scene-1.css">
+  <link rel="stylesheet" href="/public/css/texting.css">
+  <link rel="stylesheet" href="/public/css/3dot.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- blurfilter plugin -->
+  <link rel="icon" type="image/x-icon" href="/public/img/icon.png">
+</head>
+
+<body>
+  <audio autoplay muted>
+    <source src="../public/audio/mix_5m55s (audio-joiner.com).mp3" title="rainy lady" title="monochrome rainbow">
+  </audio>
+  <div class="sound-button">
+    <i class="fa-solid fa-volume-xmark fa-fade"></i>
+  </div>
+  <div class="scroll-action">
+    <span class="text">SCROLL</span>
+    <div class="arrow"></div>
+  </div>
+  <div class="evtbg">
+    <!-- <img src="../public/img/evtbg_1.png" alt="">
+    <img src="../public/img/evtbg_2.png" alt=""> -->
+    <div class="img"></div>
+  </div>
+  <!-- ====== hero =========== -->
+  <div class="hero">
+    <!-- loading scene -->
+    <div class="loader"></div>
+    <div class="hero__wrapper">
+      <p class="hero__text-1">you can unmute the sound (headphone recommend)</p>
+    </div>
+    <!-- scene-1 -->
+    <div class="hero__wrapper">
+      <p class="hero__text-1">today is your birthday, so i made a little website for you</p>
+    </div>
+    <!-- scene-2 -->
+    <!-- <div id="card-1">
+      <div class="card">
+        <img src="../public/img/cute1.png" class="cute-1" alt="">
+        <p class="desc"> -->
+    <!-- the day when a lovely angel appeared in the world
+          <script>document.write((new Date).getFullYear() - 2003)</script> years ago. -->
+    <!-- </p>
+        <img src="../public/img/suncute.png" class="suncute" alt="">
+        <img src="../public/img/cloud1.png" class="cloud1" alt="">
+        <img src="../public/img/cloud2.png" class="cloud2" alt="">
+        <img src="../public/img/cloud3.png" class="cloud3" alt="">
+      </div>
+    </div> -->
+    <!-- scene-3 -->
+    <div class="hero__wrapper">
+      <p class="hero__text-1">hope you feel meaningful</p>
+    </div>
+    <!-- scene-4 -->
+    <div class="hero__letter">
+      <img src="../public/img/letter.png" class="letter" alt="">
+    </div>
+  </div>
+  <!-- ====== gane ========== -->
+  <div class="game" id="1">
+    <div class="game_title">
+      <h2>Let's play game</h2>
+    </div>
+    <div class="game__container">
+      <div class="game_img"><img src="/public/img/1.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/2.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/3.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/4.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/5.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/6.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/7.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/8.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/9.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/10.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/11.jpg" alt=""></div>
+      <div class="game_img"><img src="/public/img/12.jpg" alt=""></div>
+    </div>
+  </div>
+  <!-- ====== chat ============ -->
+  <div class="chat">
+    <div class="chat__illustration">
+      <img src="/public/img/seephone.gif" alt="">
+    </div>
+    <h2 class="chat-title" style="pointer-events:fill;">
+      <a href="https://www.youtube.com/watch?v=JpB8zwLVtBU&list=LL&index=15&ab_channel=jazziamarie"
+        style="pointer-events:fill;" target="_blank" rel="noopener noreferrer">Chatting</a>
+    </h2>
+    <span class="time"
+      title="Nếu bà thắc mắc tại sao chỉ sát với thời gian hiện tại thì bởi vì tôi lấy thời gian lúc bà vô web :Đ"
+      style="pointer-events:fill;">
+      <script>
+        let date = new Date();
+        document.write([(date.getHours()).toString().padStart(2, '0'), date.getMinutes().toString().padStart(2, '0')].join(':'));
+      </script>
+    </span>
+    <div class="chat-container coder">
+      <img src="/public/img/coder.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Coder</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <div class="sticker">
+            <img src="/public/img/memegif3.gif" alt="">
+          </div>
+          <p class="chat-content">Hi bà, nói chuyện xíu đi</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container main-heroine">
+      <img src="/public/img/main_heroine.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Main heroine</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">Ủa :v</p>
+          <p class="chat-content">sao ở đây ông lại viết bằng tiếng Việt rồi :V</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container coder">
+      <img src="/public/img/coder.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Coder</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">Lúc đầu định viết hết tiếng Anh, lúc làm tới đoạn này thì không ổn lắm 🥲</p>
+          <p class="chat-content">mà thui bỏ qua vấn đề này đi kk, tui mới tìm hiểu qua về ngày 29/5 <a
+              href="https://entertainment.howstuffworks.com/horoscopes-astrology/may-29-birthday-astrology.htm"
+              target="_blank" rel="noopener">ở đây nè</a>, là
+            sinh nhật của
+            bà đó</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container main-heroine">
+      <img src="/public/img/main_heroine.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Main heroine</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">ò thế nói đuy</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container coder">
+      <img src="/public/img/coder.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Coder</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">
+            Theo như những gì tôi đọc qua, những người sinh vào ngày này thuộc cung Song Tử
+          </p>
+          <p class="chat-content">
+            họ có những phẩm chất đặc biệt không ai sánh được, sở hữu sự thông minh, quyến rũ và hài hước.
+          </p>
+          <p class="chat-content">xong á, tôi còn đọc được là họ rất có xu hướng dễ gần và có thể khiến người khác thấy
+            họ là người rất quan
+            trọng</p>
+          <p class="chat-content">còn nhiều cái lắm mà tôi không đưa hết vô đây được, cơ mà từ góc nhìn của tôi cũng
+            thấy một vài điểm giống bà đó kkk 🤭</p>
+          <!-- <div class="sticker">
+            <img src="/public/img/sticker1.png" alt="">
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="chat-container main-heroine">
+      <img src="/public/img/main_heroine.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Main heroine</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">ò thế hỏ</p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container coder">
+      <img src="/public/img/coder.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Coder</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <div class="sticker">
+            <img src="/public/img/sticker1.png" alt="">
+          </div>
+          <p class="chat-content">hmm... Chẳng biết có đúng khum nữa, tùy người mà kkkk</p>
+          <p class="chat-content">
+            nhưng mà trong thời gian vừa qua, bà luôn là người nói chuyện
+            với tôi, cảm ơn bà vì đã là một phần trong cuộc sống của tôi
+          </p>
+          <p class="chat-content">
+            hy vọng tuổi mới bà sẽ gặp nhiều điều tốt đẹp hơn, ngày càng xinh đẹp hơn ^^
+          </p>
+          <p class="chat-content">
+            mong bà sẽ vượt qua hết khó khăn trong học tập và công việc
+          </p>
+          <p class="chat-content">
+            chúc bà có một ngày sinh nhật vui vẻ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="chat-container main-heroine">
+      <img src="/public/img/main_heroine.jpg" alt="" class="avt">
+      <div class="chat-info">
+        <span class="name">Main heroine</span>
+        <div class="chat-load">
+          <div class="dot-flashing"></div>
+        </div>
+        <div class="list-chat">
+          <p class="chat-content">.seen</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <!-- ====== birthday box =========== -->
+  <div class="birthdayBox" data-section="none">
+    <div class="birthday-img">
+      <img src="/public/img/birthday-box.png" alt="">
+    </div>
+  </div>
+  <script src="animation.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="smoothScroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,531 @@
+/* ========== reset css ============ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== for the font ====== */
+* {
+  font-family: "Cera Round Pro", sans-serif;
+  pointer-events: none;
+}
+
+html,
+body {
+  font-family: "Cera Round Pro", sans-serif;
+}
+
+/* === sound button === */
+.sound-button {
+  position: fixed;
+  padding: 10px;
+  top: 2%;
+  right: 2%;
+  z-index: 99;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* ====== for the test ======== */
+.space {
+  width: 100vw;
+  height: 150vh;
+}
+
+/* ========== custom scroll bar ========== */
+
+/* make scroll smooth, in case browser not support, smoothScoll.js will relace this shit :D */
+html,
+body {
+  overflow: overlay;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  width: 2px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 195, 160, 0.3),
+    rgba(255, 175, 189, 0.3)
+  );
+}
+
+/* === scroll action ==== */
+.scroll-action {
+  pointer-events: all;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 15%;
+  left: 95%;
+  font-weight: 500;
+  color: #1119;
+  z-index: 99;
+  padding: 10px;
+}
+
+.scroll-action .text {
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.arrow {
+  position: absolute;
+  top: 280%;
+  right: 50%;
+  transform: translateX(50%);
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 0px;
+  border-radius: 999px;
+  background-color: #3339;
+}
+
+/* 
+decorate background
+*/
+.evtbg {
+  position: fixed;
+}
+
+.evtbg .img {
+  position: absolute;
+  width: 95vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  background-image: url("/public/img/evtbg_1.png"),
+    url("/public/img/evtbg_2.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+/* ========= hero ============ */
+/* loading scene */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  font-weight: 400;
+  height: 100vh;
+}
+
+.hero__letter {
+  position: absolute;
+  /* center */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  pointer-events: all;
+}
+
+.hero__letter img {
+  width: 75%;
+}
+
+/* ==== game ==== */
+.game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 30vh;
+  padding-top: 5vh;
+}
+
+.game_title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.game__container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.game__container .game_img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.game__container .game_img {
+  position: absolute;
+  pointer-events: all;
+  width: 10%;
+  top: 0;
+  left: 0;
+}
+
+.game__container .game_img:nth-child(1) {
+  top: 14vh;
+  left: 20vw;
+}
+
+.game__container .game_img:nth-child(2) {
+  top: 32vh;
+  left: 35vw;
+}
+
+.game__container .game_img:nth-child(3) {
+  top: 50vh;
+  left: 22vw;
+}
+
+.game__container .game_img:nth-child(4) {
+  top: 55vh;
+  left: 65vw;
+}
+
+.game__container .game_img:nth-child(5) {
+  top: 10vh;
+  left: 50vw;
+}
+
+.game__container .game_img:nth-child(6) {
+  top: 15vh;
+  left: 80vw;
+}
+
+.game__container .game_img:nth-child(7) {
+  top: 40vh;
+  left: 80vw;
+}
+
+.game__container .game_img:nth-child(8) {
+  top: 60vh;
+  left: 50vw;
+}
+
+.game__container .game_img:nth-child(9) {
+  top: 33vh;
+  left: 54vw;
+}
+
+.game__container .game_img:nth-child(10) {
+  top: 0vh;
+  left: 35vw;
+}
+
+.game__container .game_img:nth-child(11) {
+  top: 17vh;
+  left: 69vw;
+}
+
+.game__container .game_img:nth-child(12) {
+  top: 0vh;
+  left: 10vw;
+}
+
+/* === chat === */
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  margin-top: 30vh;
+  gap: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.chat-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.chat__illustration {
+  position: absolute;
+  opacity: 0.26;
+  top: 400px;
+  right: 10%;
+}
+
+.chat-container {
+  display: flex;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.chat .avt {
+  width: 40px;
+  border-radius: 50%;
+  transition: ease-in 0.3s;
+  display: none;
+}
+
+.chat .sticker {
+  display: none;
+}
+
+.chat .sticker img {
+  object-fit: cover;
+  width: 150px;
+}
+
+.chat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.chat-info .list-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.chat-info .name {
+  font-size: 12px;
+  display: none;
+}
+
+.chat-info .chat-content {
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 35vw;
+  font-size: 14px;
+  line-height: 1.3;
+  display: none;
+}
+
+.chat-info a {
+  color: #27374d;
+  text-decoration: none;
+  pointer-events: stroke;
+}
+
+.coder .chat-content {
+  background: rgb(175, 170, 166);
+  background: #b7b7b7;
+}
+
+.main-heroine .chat-content {
+  background: #a4d0a4;
+}
+/* =============== birthdayBox =========== */
+
+/* draw circle when animation starts */
+.birthdayBox {
+  position: relative;
+  -webkit-clip-path: circle(20% at 50% 50%);
+  clip-path: circle(20% at 50% 50%);
+  overflow: hidden;
+}
+
+/* start position of birday box */
+.birthdayBox.is-active {
+  -webkit-clip-path: circle(100% at 54% 40%);
+  clip-path: circle(100% at 54% 40%);
+  -webkit-transition: -webkit-clip-path 2.5s cubic-bezier(0.46, 0, 0.17, 0.99)
+    0.3s;
+  transition: -webkit-clip-path 2.5s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s;
+  transition: clip-path 2.5s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s;
+  transition: clip-path 2.5s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s,
+    -webkit-clip-path 2.5s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s;
+}
+
+/* position of image before animation is triggered */
+.birthdayBox img {
+  -webkit-transform: scale(1.9) rotate(20deg);
+  transform: scale(1.9) rotate(20deg);
+  -webkit-transform-origin: 51% 41%;
+  transform-origin: 51% 41%;
+  width: 100%;
+}
+
+/* position of image when animation start */
+.birthdayBox.is-active img {
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  -webkit-transition: 2s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s;
+  transition: 2s cubic-bezier(0.46, 0, 0.17, 0.99) 0.3s;
+}
+
+/* position of box that contains image */
+.birthday-img {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+/* position of box image  when animation start */
+.birthdayBox.is-active .birthday-img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+}

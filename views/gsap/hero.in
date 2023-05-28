@@ -1,0 +1,1 @@
+gsap.to(graph, { duration: 2.5, ease: CustomEase.create("custom", "M0,0 C0.366,0 0.452,-0.032 0.708,0.058 0.993,0.158 1,1 1,1 "), y: -500 });

@@ -1,0 +1,78 @@
+:root {
+  --size-dot: 5px;
+}
+
+.chat-load {
+  display: none;
+  padding: 5px 10px;
+}
+
+.dot-flashing {
+  display: none;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  transform: translateX(15px);
+}
+
+.coder .dot-flashing {
+  background-color: #b7b7b7;
+}
+
+.main-heroine .dot-flashing {
+  background-color: #a4d0a4;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.coder .dot-flashing::before {
+  background-color: #b7b7b7;
+}
+
+.main-heroine .dot-flashing::before {
+  background-color: #a4d0a4;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.coder .dot-flashing::after {
+  background-color: #b7b7b7;
+}
+
+.main-heroine .dot-flashing::after {
+  background-color: #a4d0a4;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%,
+  100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
